@@ -2,7 +2,7 @@ import 'package:ecommerce_app/config/extensions/extension.dart';
 import 'package:ecommerce_app/config/theme/app_colors.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../common/widgets/images/svg_picture.dart';
+import '../../../../common/widgets/images/custom_app_images.dart';
 import '../../../../core/constants/sizes.dart';
 
 class OnBoardingCenter extends StatelessWidget {
@@ -23,7 +23,11 @@ class OnBoardingCenter extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          CustomAppImages(name: image),
+          CustomAppImages(
+            name: image,
+            width: 300,
+            height: 300,
+          ),
           const SizedBox(height: AppSizes.sm),
           Text(
             title,

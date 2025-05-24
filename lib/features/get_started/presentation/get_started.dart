@@ -1,4 +1,4 @@
-import 'package:ecommerce_app/common/widgets/images/svg_picture.dart';
+import 'package:ecommerce_app/common/widgets/images/custom_app_images.dart';
 import 'package:ecommerce_app/config/theme/app_colors.dart';
 import 'package:ecommerce_app/core/constants/images.dart';
 import 'package:ecommerce_app/core/constants/text_strings.dart';
@@ -14,10 +14,10 @@ class GetStarted extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
-          Positioned.fill(
+          const Positioned.fill(
             child: CustomAppImages(
               isSvg: false,
-              name: AppImages.getStatedBanner,
+              name: AppImages.getStartedBanner,
             ),
           ),
           Positioned(
@@ -49,7 +49,7 @@ class GetStarted extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                       AppTexts.getStartedTitle,
                       textAlign: TextAlign.center,
                       style: TextStyle(
@@ -58,8 +58,8 @@ class GetStarted extends StatelessWidget {
                         fontWeight: FontWeight.w600,
                       ),
                     ),
-                    SizedBox(height: AppSizes.sm),
-                    Text(
+                    const SizedBox(height: AppSizes.sm),
+                    const Text(
                       AppTexts.getStartedContent,
                       textAlign: TextAlign.center,
                       style: TextStyle(
@@ -68,12 +68,12 @@ class GetStarted extends StatelessWidget {
                         fontWeight: FontWeight.w600,
                       ),
                     ),
-                    SizedBox(height: AppSizes.xxl),
+                    const SizedBox(height: AppSizes.xxl),
                     SizedBox(
                       width: double.infinity,
                       child: ElevatedButton(
                         onPressed: () {},
-                        child: Text(
+                        child: const Text(
                           AppTexts.getStarted,
                           textAlign: TextAlign.center,
                           style: TextStyle(

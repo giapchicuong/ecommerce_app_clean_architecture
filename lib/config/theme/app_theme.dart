@@ -10,7 +10,7 @@ class AppTheme {
     textTheme: GoogleFonts.montserratTextTheme(
       ThemeData.light().textTheme,
     ),
-    appBarTheme: AppBarTheme(
+    appBarTheme: const AppBarTheme(
       elevation: 0,
       backgroundColor: AppColors.background,
     ),
@@ -33,7 +33,7 @@ class AppTheme {
       style: ElevatedButton.styleFrom(
         backgroundColor: AppColors.primary,
         elevation: 0,
-        textStyle: TextStyle(fontSize: 16, fontWeight: FontWeight.w400),
+        textStyle: const TextStyle(fontSize: 16, fontWeight: FontWeight.w400),
         padding: const EdgeInsets.symmetric(
           horizontal: 15,
           vertical: 15,

@@ -1,24 +1,20 @@
 class AppImages {
-  static String get baseAssets => 'assets/images/';
-  static String defaultExtension = 'svg';
+  static const String baseAssets = 'assets/images/';
+  static const String defaultExtension = 'svg';
+  static const String extensionPng = 'png';
 
-  static String get appleLogo => _getUrlImage(name: 'apple_logo');
-  static String get facebookLogo => _getUrlImage(name: 'facebook_logo');
-  static String get googleLogo => _getUrlImage(name: 'google_logo');
-  static String get getStatedBanner =>
-      _getUrlImage(name: 'get_started_banner', extension: 'png');
-  static String get logo => _getUrlImage(name: 'logo');
-  static String get onBoarding1 => _getUrlImage(name: 'on_boarding1');
-  static String get onBoarding2 => _getUrlImage(name: 'on_boarding2');
-  static String get onBoarding3 => _getUrlImage(name: 'on_boarding3');
+  static const String appleLogo = '${baseAssets}apple_logo.$defaultExtension';
+  static const String facebookLogo =
+      '${baseAssets}facebook_logo.$defaultExtension';
+  static const String googleLogo = '${baseAssets}google_logo.$defaultExtension';
 
-  static String _getUrlImage({
-    required String name,
-    String? customBase,
-    String? extension,
-  }) {
-    final base = customBase ?? baseAssets;
-    final ext = extension ?? defaultExtension;
-    return '$base$name.$ext';
-  }
+  static const String getStartedBanner = '${baseAssets}get_started_banner.$extensionPng';
+  static const String logo = '${baseAssets}logo.$defaultExtension';
+
+  static const String onBoarding1 =
+      '${baseAssets}on_boarding1.$defaultExtension';
+  static const String onBoarding2 =
+      '${baseAssets}on_boarding2.$defaultExtension';
+  static const String onBoarding3 =
+      '${baseAssets}on_boarding3.$defaultExtension';
 }
