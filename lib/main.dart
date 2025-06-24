@@ -1,8 +1,7 @@
 import 'package:ecommerce_app/config/theme/app_theme.dart';
+import 'package:ecommerce_app/features/get_started/presentation/get_started.dart';
 import 'package:ecommerce_app/injection_container.dart';
 import 'package:flutter/material.dart';
-
-import 'features/onboarding/presentation/pages/onboarding.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: AppTheme.lightTheme,
-      home: const OnBoarding(),
+      home: const GetStarted(),
     );
   }
 }

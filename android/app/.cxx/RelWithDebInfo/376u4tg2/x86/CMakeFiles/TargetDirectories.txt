@@ -1,0 +1,2 @@
+D:/DIKO PROJECT/Study Projects/Flutter/ecommerce_app/android/app/.cxx/RelWithDebInfo/376u4tg2/x86/CMakeFiles/edit_cache.dir
+D:/DIKO PROJECT/Study Projects/Flutter/ecommerce_app/android/app/.cxx/RelWithDebInfo/376u4tg2/x86/CMakeFiles/rebuild_cache.dir
